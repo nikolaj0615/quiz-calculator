@@ -1,6 +1,4 @@
 
-Certainly! Here's a README.md content example for your quiz calculator project:
-
 Quiz Calculator
 Welcome to the Quiz Calculator project! This project is a simple, interactive quiz that tests the user’s knowledge while incorporating a basic calculator for scoring. The quiz features three questions, a dynamic scoring system, and additional features like an age-based input and an optional "Extra Calculation" toggle that can double the final score.
 
