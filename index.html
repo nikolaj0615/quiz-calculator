@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='css/style.css'>
+  <title>Interactive Calculator</title>
+</head>
+<body>
+<div class="quiz">
+  <div class="description">
+    <p>
+      Welcome to the quiz! For each correct answer, you will earn 10 points, while each incorrect answer will deduct 5 points from your score. Your age will also be added to the final result. If the "Extra Calculation" toggle is enabled, your total points will be doubled. Once you have answered all the questions, click on "Calculate" to see your result. You can click on "Reset" to start over at any time.
+    </p>
+
+  </div>
+  <div class="container">
+    <h1>Quick quiz</h1>
+
+    <div class="questions">
+      <div class="question">
+        <p>1. What is the capital of France?</p>
+        <label><input type="radio" name="question1" value="10"> Paris</label>
+        <label><input type="radio" name="question1" value="-5"> London</label>
+        <label><input type="radio" name="question1" value="-5"> Berlin</label>
+      </div>
+      <div class="question">
+        <p>2. Which planet is known as the Red Planet?</p>
+        <label><input type="radio" name="question2" value="-5"> Jupiter</label>
+        <label><input type="radio" name="question2" value="-5"> Venus</label>
+        <label><input type="radio" name="question2" value="10"> Mars</label>
+      </div>
+      <div class="question">
+        <p>3. Which element has the chemical symbol 'O'?</p>
+        <label><input type="radio" name="question3" value="-5"> Gold</label>
+        <label><input type="radio" name="question3" value="10"> Oxygen</label>
+        <label><input type="radio" name="question3" value="-5"> Osmium</label>
+      </div>
+    </div>
+
+    <div class="slider-input">
+      <p>Enter your age:</p>
+      <input type="number" id="numberInput" value="0" min="0" max="99">
+      <input type="range" id="rangeInput" value="0" min="0" max="99">
+    </div>
+
+    <div class="extra-toggle">
+      <div class="cont">
+        <div class="toggle" id="extraCalcButton">
+          <input type="checkbox" id="mode-toggle" class="toggle__input">
+          <label for="mode-toggle" class="toggle__label"></label>
+        </div>
+        <p>Extra Calculation: <span id="calc-status">Off</span></p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="calculateButton">Calculate</button>
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <div class="result">
+      <p>Result: <span id="resultValue">0</span></p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script src='js/app.js'></script>
+</body>
+</html>
